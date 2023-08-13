@@ -11,7 +11,6 @@ let maxGuess = 0;
 choices.textContent = count
 
 guessButton.addEventListener("click", function () {
-    console.log(randomNumber);
   if (count <= maxGuess) {
     resultDiv.textContent = `You Lose ! The correct number was ${randomNumber} :(`;
     guessButton.disabled = true;
