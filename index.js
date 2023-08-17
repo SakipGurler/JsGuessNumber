@@ -6,12 +6,13 @@ const choices = document.querySelector(".choices")
 
 let count = 5;
 
-let maxGuess = 0;
+let maxGuess = 1;
 
 choices.textContent = count
 
 guessButton.addEventListener("click", function () {
   if (count <= maxGuess) {
+    choices.textContent = "0"
     resultDiv.textContent = `You Lose ! The correct number was ${randomNumber} :(`;
     guessButton.disabled = true;
     setTimeout(function() {
